@@ -1,0 +1,20 @@
+{
+  "institucion": "WÚRU CENTRAL",
+  "links": [
+    {
+      "label": "DxI",
+      "route": "/reportes/dxi",
+      "labelChica": "D",
+      "title": "Diagnostico por Imágenes",
+      "section": "REPORTES"
+    }
+  ],
+  "sitios": [
+    {
+      "id": "sitio01",
+      "name": "sitiosBar",
+      "value": "sitio01",
+      "titleSitio": "Rosario"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.itemsTituloVermas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tituloStep {
+  margin: 0;
+}
+
+.btnVolver {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btnVolver:hover {
+  opacity: 0.5;
+}
+
+.goBackLogo {
+  height: 15px;
+  width: auto;
+}
+.tituloModalidad-mobile {
+  display: none;
+}
