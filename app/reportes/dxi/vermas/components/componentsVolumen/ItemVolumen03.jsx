@@ -134,7 +134,8 @@ export default function ItemVolumen01({ datos, dataDxI }) {
               }}
             >
               <span>
-                TOP <strong>5</strong> DE PROCEDIMIENTOS
+                <strong>PRINCIPALES</strong> PROCEDIMIENTOS
+                <span style={{ fontSize: " 10px", opacity: "0.5", marginLeft: "8px" }}>Representan el {datos.porcentajeDelTotal} del total</span>
               </span>
               <span style={{ fontSize: "11px", marginLeft: "16px", opacity: "0.5" }}>
                 Datos pertenecientes al {datos.month}/{datos.year}
@@ -155,7 +156,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                 style={{
                   display: "grid",
                   alignItems: "center",
-                  gridTemplateColumns: "1.3fr .3fr .6fr .4fr .4fr .2fr",
+                  gridTemplateColumns: "1.1fr .3fr .6fr .4fr .4fr .4fr .2fr",
                   color: "#1c1c1c",
                   fontSize: "10px",
                   fontWeight: "500",
@@ -245,6 +246,20 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                     justifyContent: "center",
                   }}
                 >
+                  % SUBESTIMADO
+                </p>
+                <p
+                  style={{
+                    margin: 0,
+                    border: "solid 0.5px #1c1c1c20",
+
+                    backgroundColor: "#D8D8D8",
+                    height: "22px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
                   DESVIO
                 </p>
               </div>
@@ -255,7 +270,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                       style={{
                         display: "grid",
                         alignItems: "center",
-                        gridTemplateColumns: "1.3fr .3fr .6fr .4fr .4fr .2fr",
+                        gridTemplateColumns: "1.1fr .3fr .6fr .4fr .4fr .4fr .2fr",
                         color: "#1c1c1c",
                         fontSize: "12px",
                         fontWeight: "700",
@@ -322,6 +337,18 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                         }}
                       >
                         {item.sobrestimado}
+                      </p>
+                      <p
+                        style={{
+                          margin: 0,
+                          border: "solid 0.5px #1c1c1c20",
+                          height: "26px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        {item.subestimado}
                       </p>
                       <p
                         style={{
