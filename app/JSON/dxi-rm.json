@@ -296,7 +296,8 @@
             "tickfont": {
               "size": 10
             }
-          }
+          },
+          "dragmode": false
         },
 
         "data02": [
@@ -387,7 +388,8 @@
         "config": {
           "responsive": true,
           "displayModeBar": false
-        }
+        },
+        "dragmode": false
       },
       {
         "pregunta": "¿Cuáles son los procedimientos que más se hacen?",
