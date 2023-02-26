@@ -68,7 +68,7 @@ export default function verMasPage() {
             <span className="tituloStep">⏐ {step}</span>
           </p>
         )}
-        {dataItemsDxI[itemIndex].verMas ? <VerMasItem data={dataItemsDxI[itemIndex].verMas} /> : null}
+        {dataItemsDxI[itemIndex] !== undefined ? <VerMasItem data={dataItemsDxI[itemIndex].verMas} /> : null}
       </div>
     </>
   );
