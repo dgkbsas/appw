@@ -1,0 +1,8 @@
+App repositorio DGK. 
+Version inicial, para poder compartir en vercel
+
+repository
+https://github.com/dgkbsas/appw.git
+
+vercel
+https://vercel.com/dgkbsas/newappw
