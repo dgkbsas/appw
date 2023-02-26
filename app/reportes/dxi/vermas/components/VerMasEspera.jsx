@@ -13,21 +13,25 @@ import dxiTC from "@/app/JSON/dxi-tc.json";
 import "./ver-mas-item.css";
 
 export default function VerMasEspera({ ubicacion }) {
-  // //get Context values and functions
-  // const { modalidadDxI } = useContext(Contexto);
+  //get Context values and functions
+  const { modalidadDxI } = useContext(Contexto);
 
-  // const [datosSegunModalidad, setDatosSegunModalidad] = useState("");
-  // const [datosVerMas, setDatosVerMas] = useState("");
+  const [datosSegunModalidad, setDatosSegunModalidad] = useState("");
+  const [datosVerMas, setDatosVerMas] = useState("");
 
-  // useEffect(() => {
-  //   if (modalidadDxI === "tc") {
-  //     setDatosSegunModalidad(dxiTC[ubicacion]);
-  //     setDatosVerMas(dxiTC[ubicacion].verMas);
-  //   } else if (modalidadDxI === "rm") {
-  //     setDatosSegunModalidad(dxiRM[ubicacion]);
-  //     setDatosVerMas(dxiRM[ubicacion].verMas);
-  //   }
-  // }, [modalidadDxI]);
+  useEffect(() => {
+    if (modalidadDxI === "tc") {
+      setDatosSegunModalidad(dxiTC[ubicacion]);
+      setDatosVerMas(dxiTC[ubicacion].verMas);
+    } else if (modalidadDxI === "rm") {
+      setDatosSegunModalidad(dxiRM[ubicacion]);
+      setDatosVerMas(dxiRM[ubicacion].verMas);
+    }
+  }, [modalidadDxI]);
 
-  return <>{/* <ItemEspera01 datos={datosVerMas[0]} dataDxI={datosSegunModalidad} /> */}</>;
+  return (
+    <>
+      <ItemEspera01 datos={datosVerMas[0]} dataDxI={datosSegunModalidad} />
+    </>
+  );
 }
