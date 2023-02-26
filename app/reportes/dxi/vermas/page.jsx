@@ -10,7 +10,8 @@ import "@/app/globals.css";
 
 //components
 import Contexto from "@/app/context/Contexto";
-import VerMasItem from "./components/VerMasItem";
+import VerMasVolumen from "../vermas/components/VerMasVolumen";
+import VerMasEspera from "../vermas/components/VerMasEspera";
 
 //images
 import goBackLogo from "@/app/assets/statics/icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg";
@@ -23,7 +24,7 @@ export default function verMasPage() {
   const title = searchParams.get("titulo");
   const seccion = searchParams.get("seccion");
   const step = searchParams.get("step");
-  const itemIndex = searchParams.get("index");
+  const ubicacion = searchParams.get("index");
 
   return (
     <>
@@ -66,7 +67,13 @@ export default function verMasPage() {
             <span className="tituloStep">⏐ {step}</span>
           </p>
         )}
-        <VerMasItem data={dataItemsDxI[itemIndex]} />
+        {/* <VerMasItem /> */}
+        <div className="containerVerMas">
+          {ubicacion === "1" && null}
+          {ubicacion === "2" && <VerMasEspera ubicacion={ubicacion} />}
+          {ubicacion === "3" && <VerMasVolumen ubicacion={ubicacion} />}
+          {ubicacion === "5" && null}
+        </div>
       </div>
     </>
   );

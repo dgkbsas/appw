@@ -11,9 +11,6 @@ import ItemVolumen03 from "./componentsVolumen/ItemVolumen03";
 import dxiRM from "@/app/JSON/dxi-rm.json";
 import dxiTC from "@/app/JSON/dxi-tc.json";
 
-//styles
-import "./ver-mas-item.css";
-
 export default function VerMasVolumen({ ubicacion }) {
   //get Context values and functions
   const { modalidadDxI } = useContext(Contexto);

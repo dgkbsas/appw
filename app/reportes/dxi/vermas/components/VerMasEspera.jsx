@@ -9,9 +9,6 @@ import ItemEspera01 from "./componentsEspera/ItemEspera01";
 import dxiRM from "@/app/JSON/dxi-rm.json";
 import dxiTC from "@/app/JSON/dxi-tc.json";
 
-//styles
-import "./ver-mas-item.css";
-
 export default function VerMasEspera({ ubicacion }) {
   //get Context values and functions
   const { modalidadDxI } = useContext(Contexto);
