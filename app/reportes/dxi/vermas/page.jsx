@@ -25,8 +25,6 @@ export default function verMasPage() {
   const step = searchParams.get("step");
   const itemIndex = searchParams.get("index");
 
-  console.log(dataItemsDxI[itemIndex].verMas);
-
   return (
     <>
       <div className="containerStepCard">
@@ -68,7 +66,7 @@ export default function verMasPage() {
             <span className="tituloStep">⏐ {step}</span>
           </p>
         )}
-        {dataItemsDxI[itemIndex] !== undefined ? <VerMasItem data={dataItemsDxI[itemIndex].verMas} /> : null}
+        <VerMasItem data={dataItemsDxI[itemIndex].verMas} />
       </div>
     </>
   );
