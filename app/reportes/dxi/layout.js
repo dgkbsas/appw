@@ -73,7 +73,7 @@ export default function dxiPage({ children }) {
               </div>
               <div className="containerLineaSet">
                 <p>Rango temporal analizado:</p>
-                <p className="radioButtonSitio">ÚLTIMOS 3 MESES</p>
+                <p className="radioButtonSitio">ÚLTIMO MES</p>
                 {/* <label htmlFor="3meses">
               <input type="radio" name="rangos" value="3meses" id="3meses" className="radioButtonSitio" defaultChecked />
               ÚLTIMOS 3 MESES
@@ -108,7 +108,7 @@ export default function dxiPage({ children }) {
                 <p>Rango temporal analizado:</p>
                 <label htmlFor="3meses">
                   <input type="radio" name="rangos" value="3meses" id="3meses" className="radioButtonSitio" defaultChecked />
-                  ÚLTIMOS 3 MESES
+                  ÚLTIMO MES
                 </label>
               </div>
               <div className="containerLineaSet">
