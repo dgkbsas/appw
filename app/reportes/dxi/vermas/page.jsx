@@ -12,6 +12,8 @@ import "@/app/globals.css";
 import Contexto from "@/app/context/Contexto";
 import VerMasVolumen from "../vermas/components/VerMasVolumen";
 import VerMasEspera from "../vermas/components/VerMasEspera";
+import VerMasAgendamiento from "../vermas/components/VerMasAgendamiento";
+import VerMasInformes from "../vermas/components/VerMasInformes";
 
 //images
 import goBackLogo from "@/app/assets/statics/icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg";
@@ -67,12 +69,11 @@ export default function verMasPage() {
             <span className="tituloStep">⏐ {step}</span>
           </p>
         )}
-        {/* <VerMasItem /> */}
         <div className="containerVerMas">
-          {ubicacion === "1" && null}
+          {ubicacion === "1" && <VerMasAgendamiento ubicacion={ubicacion} />}
           {ubicacion === "2" && <VerMasEspera ubicacion={ubicacion} />}
           {ubicacion === "3" && <VerMasVolumen ubicacion={ubicacion} />}
-          {ubicacion === "5" && null}
+          {ubicacion === "5" && <VerMasInformes ubicacion={ubicacion} />}
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 {
-  "institucion": "WÚRU CENTRAL",
+  "institucion": "CLÍNICA HOSPITAL SAN FERNANDO",
   "links": [
     {
       "label": "DxI",
@@ -14,7 +14,7 @@
       "id": "sitio01",
       "name": "sitiosBar",
       "value": "sitio01",
-      "titleSitio": "Clínica San Fernando"
+      "titleSitio": "Clínica Hospital San Fernando"
     }
   ]
 }

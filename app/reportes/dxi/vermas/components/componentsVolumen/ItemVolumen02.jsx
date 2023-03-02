@@ -11,19 +11,7 @@ import "@/app/globals.css";
 import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
 
-export default function ItemVolumen01({ datos, dataDxI }) {
-  console.log(datos);
-
-  function SumarDatos(array) {
-    let sumaTotal = [];
-    let cantidadEquipos = array.length;
-    for (let i = 0; i < cantidadEquipos; i++) {
-      let suma = array[i].y.reduce((a, b) => a + b);
-      sumaTotal.push(suma);
-    }
-    let sumafinal = sumaTotal.reduce((a, b) => a + b);
-    return sumafinal;
-  }
+export default function ItemVolumen02({ datos, dataDxI }) {
   return (
     <>
       {datos != undefined && (

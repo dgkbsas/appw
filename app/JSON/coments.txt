@@ -6,6 +6,8 @@ Colores:
 #EB7575 - rojo
 #92C1D0 - celeste
 #6699C3 - azul
+#49307d - violeta recomendaciones
+
 
 
 "links": [

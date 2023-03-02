@@ -20,13 +20,11 @@ export default function NavegationBar() {
         <Image className="logoNav" src={logo} alt="/" />
       </Link>
       <ul className="navigation">
-        {links.map(({ label, route, labelChica, title, section, index }) => (
-          <li>
+        {links.map((item, index) => (
+          <li key={index}>
             <div className="tooltip">
-              <Link href={{ pathname: route, query: { titulo: title, seccion: section } }} key={index}>
-                {labelChica}
-              </Link>
-              <span className="tooltiptext">{label}</span>
+              <Link href={{ pathname: item.route, query: { titulo: item.title, seccion: item.section } }}>{item.labelChica}</Link>
+              <span className="tooltiptext">{item.label}</span>
             </div>
           </li>
         ))}

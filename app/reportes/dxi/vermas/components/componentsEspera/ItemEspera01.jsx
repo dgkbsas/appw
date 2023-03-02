@@ -11,17 +11,7 @@ import "@/app/globals.css";
 import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
 
-export default function ItemEspera01({ datos, dataDxI }) {
-  function SumarDatos(array) {
-    let sumaTotal = [];
-    let cantidadEquipos = array.length;
-    for (let i = 0; i < cantidadEquipos; i++) {
-      let suma = array[i].y.reduce((a, b) => a + b);
-      sumaTotal.push(suma);
-    }
-    let sumafinal = sumaTotal.reduce((a, b) => a + b);
-    return sumafinal;
-  }
+export default function ItemEspera01({ datos, diasEvaluados }) {
   return (
     <>
       {datos != undefined && (
@@ -32,7 +22,7 @@ export default function ItemEspera01({ datos, dataDxI }) {
             </p>
           </header>
           <br />
-          {/* <div
+          <div
             className="containerInfoPreguntas-vermas"
             style={{
               backgroundColor: "#f8f8f8",
@@ -115,29 +105,23 @@ export default function ItemEspera01({ datos, dataDxI }) {
               </div>
             </div>
             <div className="containerVolumen03" style={{ display: "flex", marginTop: "8px", alignItems: "center" }}>
-              <div style={{ fontSize: "12px", minWidth: "150px" }}>
-                <p style={{ margin: 0 }}>
-                  <strong>Todos los equipos</strong>
-                </p>
-                <p style={{ margin: 0 }}>Distribución semanal</p>
-                <p style={{ margin: 0, marginTop: "8px" }}>
-                  <strong>PROMEDIO</strong> - Estudios/día
-                </p>
-                <p style={{ margin: 0, marginTop: "8px" }}>
-                  Total días promerdiados: <strong>30</strong>
-                </p>
-                <p style={{ margin: 0 }}>
-                  Total de estudios: <strong>{SumarDatos(datos.data)}</strong>
-                </p>
-                <p style={{ margin: 0 }}>
-                  Total de equipos: <strong>{datos.data.length}</strong>
-                </p>
-              </div>
-              <div className="containerVolumen02" style={{ marginLeft: "32px" }}>
+              <div className="containerVolumen02" style={{ position: "relative" }}>
+                <div style={{ fontSize: "12px", minWidth: "150px", position: "absolute", left: "760px" }}>
+                  <p style={{ margin: 0 }}>
+                    <strong>Todos los equipos</strong>
+                  </p>
+                  <p style={{ margin: 0 }}>Distribución diaria</p>
+                  <p style={{ margin: 0, marginTop: "8px" }}>
+                    <strong>PROMEDIO</strong>
+                  </p>
+                  <p style={{ margin: 0, marginTop: "8px" }}>
+                    Total días promerdiados: <strong>{diasEvaluados}</strong>
+                  </p>
+                </div>
                 <Plot data={datos.data} layout={datos.layout} config={datos.config} />
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       )}
     </>

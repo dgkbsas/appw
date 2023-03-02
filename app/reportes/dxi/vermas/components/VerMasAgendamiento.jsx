@@ -3,17 +3,17 @@ import { useEffect, useState, useContext } from "react";
 
 //components
 import Contexto from "@/app/context/Contexto";
-import ItemVolumen01 from "./componentsVolumen/ItemVolumen01";
-import ItemVolumen02 from "./componentsVolumen/ItemVolumen02";
-import ItemVolumen03 from "./componentsVolumen/ItemVolumen03";
+import ItemAgendamiento01 from "./componentsAgendamiento/ItemAgendamiento01";
+import ItemAgendamiento02 from "./componentsAgendamiento/ItemAgendamiento02";
+import ItemAgendamiento03 from "./componentsAgendamiento/ItemAgendamiento03";
 
 //JSON
 import dxiRM from "@/app/JSON/dxi-rm.json";
 import dxiTC from "@/app/JSON/dxi-tc.json";
 
-export default function VerMasVolumen({ ubicacion }) {
+export default function VerMasEspera({ ubicacion }) {
   //get Context values and functions
-  const { modalidadDxI, dataItemsDxI } = useContext(Contexto);
+  const { modalidadDxI } = useContext(Contexto);
 
   const [datosSegunModalidad, setDatosSegunModalidad] = useState("");
   const [datosVerMas, setDatosVerMas] = useState("");
@@ -30,9 +30,9 @@ export default function VerMasVolumen({ ubicacion }) {
 
   return (
     <>
-      <ItemVolumen01 datos={datosVerMas[0]} dataDxI={datosSegunModalidad} diasEvaluados={dataItemsDxI[0].cantidadDiasEvaluados} />
-      <ItemVolumen02 datos={datosVerMas[1]} dataDxI={datosSegunModalidad} />
-      <ItemVolumen03 datos={datosVerMas[2]} dataDxI={datosSegunModalidad} />
+      <ItemAgendamiento01 datos={datosVerMas[0]} dataDxI={datosSegunModalidad} />
+      <ItemAgendamiento02 datos={datosVerMas[1]} dataDxI={datosSegunModalidad} />
+      <ItemAgendamiento03 datos={datosVerMas[2]} dataDxI={datosSegunModalidad} />
     </>
   );
 }

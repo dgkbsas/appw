@@ -10,8 +10,9 @@ import "@/app/globals.css";
 //images
 import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
+import wIcon from "@/app/assets/statics/logo.svg";
 
-export default function ItemVolumen01({ datos, dataDxI }) {
+export default function ItemVolumen01({ datos, diasEvaluados }) {
   function SumarDatos(array) {
     let sumaTotal = [];
     let cantidadEquipos = array.length;
@@ -92,29 +93,40 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                     {datos.tipoIcono === "baja" && <Image className="logoEvo" src={iconEvoMala} alt="mala Evolución" />}
                   </div>
                 )}
-                <span className="inforValor02evolucion" style={{ marginLeft: "8px" }}>
-                  {datos.inforValor02evolucion}
-                </span>
+                <span className="inforValor02evolucion">{datos.inforValor02evolucion}</span>
               </div>
               <div
                 className="infoBenchmarkVolumen02"
                 style={{
                   marginLeft: "32px",
-                  backgroundColor: "#49307d70",
-                  width: "100%",
+                  paddingLeft: "32px",
+                  paddingRight: "32px",
+                  backgroundColor: "#49307d",
                   height: "64px",
                   borderRadius: "5px",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
+                  justifyContent: "flex-start",
                   gap: "8px",
                   color: "#fdfdfd",
                 }}
+                id="benchmark-mobile"
               >
-                <p style={{ fontSize: "12px", fontWeight: "500" }}>BENCHMARK</p>
+                <span className="valor03benchmark">{datos.valor03benchmark}</span>
+                <div className="infoBenchmark">
+                  <div className="containerSupInfoBench">
+                    <Image className="wlogo" src={wIcon} alt="logo W" />
+                    <p className="txtBenchmark">BENCHMARK</p>
+                  </div>
+                  <span className="info01valor03benchmark">{datos.info01valor03benchmark}</span>
+                  <span className="info02valor03benchmark">{datos.info02valor03benchmark}</span>
+                </div>
               </div>
             </div>
             <div className="containerVolumen03" style={{ display: "flex", marginTop: "8px", alignItems: "center" }}>
+              <div className="containerVolumen02" style={{ marginRight: "32px" }}>
+                <Plot data={datos.data} layout={datos.layout} config={datos.config} />
+              </div>
               <div style={{ fontSize: "12px", minWidth: "150px" }}>
                 <p style={{ margin: 0 }}>
                   <strong>Todos los equipos</strong>
@@ -124,7 +136,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                   <strong>PROMEDIO</strong> - Estudios/día
                 </p>
                 <p style={{ margin: 0, marginTop: "8px" }}>
-                  Total días promerdiados: <strong>30</strong>
+                  Total días promerdiados: <strong>{diasEvaluados}</strong>
                 </p>
                 <p style={{ margin: 0 }}>
                   Total de estudios: <strong>{SumarDatos(datos.data)}</strong>
@@ -132,9 +144,6 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                 <p style={{ margin: 0 }}>
                   Total de equipos: <strong>{datos.data.length}</strong>
                 </p>
-              </div>
-              <div className="containerVolumen02" style={{ marginLeft: "32px" }}>
-                <Plot data={datos.data} layout={datos.layout} config={datos.config} />
               </div>
             </div>
           </div>

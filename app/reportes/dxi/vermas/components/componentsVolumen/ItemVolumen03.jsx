@@ -10,7 +10,7 @@ import "@/app/globals.css";
 import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
 
-export default function ItemVolumen01({ datos, dataDxI }) {
+export default function ItemVolumen03({ datos, dataDxI }) {
   function SumarDatos(array) {
     let sumaTotal = [];
     let cantidadEquipos = array.length;
@@ -156,7 +156,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                 style={{
                   display: "grid",
                   alignItems: "center",
-                  gridTemplateColumns: "1.1fr .3fr .6fr .4fr .4fr .4fr .2fr",
+                  gridTemplateColumns: "1.1fr .3fr .4fr .3fr .5fr .4fr .4fr .2fr",
                   color: "#1c1c1c",
                   fontSize: "10px",
                   fontWeight: "500",
@@ -202,7 +202,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                     justifyContent: "center",
                   }}
                 >
-                  DURACIÓN PLANIFICADA (min)
+                  PLANIFICADA (min)
                 </p>
                 <p
                   style={{
@@ -217,7 +217,22 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                     justifyContent: "center",
                   }}
                 >
-                  DURACIÓN REAL (min)
+                  REAL (min)
+                </p>
+                <p
+                  style={{
+                    margin: 0,
+                    border: "solid 0.5px #1c1c1c20",
+                    textAlign: "center",
+                    color: "#f8f8f8",
+                    backgroundColor: "#49307d",
+                    height: "22px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  RECOMENDADA (min)
                 </p>
 
                 <p
@@ -270,7 +285,7 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                       style={{
                         display: "grid",
                         alignItems: "center",
-                        gridTemplateColumns: "1.1fr .3fr .6fr .4fr .4fr .4fr .2fr",
+                        gridTemplateColumns: "1.1fr .3fr .4fr .3fr .5fr .4fr .4fr .2fr",
                         color: "#1c1c1c",
                         fontSize: "12px",
                         fontWeight: "700",
@@ -325,6 +340,20 @@ export default function ItemVolumen01({ datos, dataDxI }) {
                         }}
                       >
                         {item.duracionReal}
+                      </p>
+                      <p
+                        style={{
+                          margin: 0,
+                          border: "solid 0.5px #f8f8f820",
+                          height: "26px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          color: "#f8f8f8",
+                          backgroundColor: "#49307dcc",
+                        }}
+                      >
+                        {item.recomendada}
                       </p>
                       <p
                         style={{
