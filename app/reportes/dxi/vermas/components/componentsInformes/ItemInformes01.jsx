@@ -10,6 +10,7 @@ import "@/app/globals.css";
 //images
 import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
+import wIcon from "@/app/assets/statics/logo.svg";
 
 export default function ItemInformes01({ datos, dataDxI }) {
   return (
@@ -35,10 +36,7 @@ export default function ItemInformes01({ datos, dataDxI }) {
           >
             <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}>
               <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}>
-                <div
-                  className="containerSuperiorVolumen01"
-                  style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9", width: "550px" }}
-                >
+                <div className="containerSuperiorVolumen01" style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9" }}>
                   {datos.tipoEvolucion01 === "buena" && (
                     <div className="containerDato01 verde">
                       <span className="valor01">{datos.valor01}</span>
@@ -89,18 +87,27 @@ export default function ItemInformes01({ datos, dataDxI }) {
                   className="infoBenchmarkVolumen02"
                   style={{
                     marginLeft: "32px",
-                    backgroundColor: "#49307d70",
-                    width: "100%",
+                    paddingLeft: "32px",
+                    paddingRight: "32px",
+                    backgroundColor: "#49307d",
                     height: "64px",
                     borderRadius: "5px",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: "flex-start",
                     gap: "8px",
                     color: "#fdfdfd",
                   }}
                 >
-                  <p style={{ fontSize: "12px", fontWeight: "500" }}>BENCHMARK</p>
+                  <span className="valor03benchmark">{datos.valor03benchmark}</span>
+                  <div className="infoBenchmark">
+                    <div className="containerSupInfoBench">
+                      <Image className="wlogo" src={wIcon} alt="logo W" />
+                      <p className="txtBenchmark">BENCHMARK</p>
+                    </div>
+                    <span className="info01valor03benchmark">{datos.info01valor03benchmark}</span>
+                    <span className="info02valor03benchmark">{datos.info02valor03benchmark}</span>
+                  </div>{" "}
                 </div>
               </div>
             </div>

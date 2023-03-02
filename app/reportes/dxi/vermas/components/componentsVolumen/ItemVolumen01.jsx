@@ -45,10 +45,7 @@ export default function ItemVolumen01({ datos, diasEvaluados }) {
             }}
           >
             <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}>
-              <div
-                className="containerSuperiorVolumen01"
-                style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9", width: "550px" }}
-              >
+              <div className="containerSuperiorVolumen01" style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9" }}>
                 {datos.tipoEvolucion01 === "buena" && (
                   <div className="containerDato01 verde">
                     <span className="valor01">{datos.valor01}</span>

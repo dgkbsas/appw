@@ -28,10 +28,13 @@
         "tipoEvolucion01": "buena",
         "infoValor01": "Días de espera hasta el próximo turno",
         "infoValor02": "Promedio último mes",
-        "valor02evolucion": "25%",
-        "tipoEvolucion02": "buena",
+        "valor02evolucion": "-25%",
+        "tipoEvolucion02": "neutra",
         "tipoIcono": "baja",
-        "inforValor02evolucion": "Disminuyó en relación  al mes anterior"
+        "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
+        "valor03benchmark": "05",
+        "info01valor03benchmark": "Días de espera",
+        "info02valor03benchmark": "Promedio último mes"
       },
       {
         "pregunta": "¿Cómo evolucionó el tiempo de espera de turno en el último año?"
@@ -71,6 +74,9 @@
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
         "inforValor02evolucion": "Aumentó en relación al mes anterior",
+        "valor03benchmark": "11",
+        "info01valor03benchmark": "Minutos de espera",
+        "info02valor03benchmark": "Promedio último mes",
         "data": [
           {
             "x": ["07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
@@ -635,7 +641,18 @@
         "info02valor03benchmark": "Promedio último mes"
       },
       {
-        "pregunta": "¿Cuántos informes exceden el tiempo de elaboración objetivo?"
+        "pregunta": "¿Cuántos informes exceden el tiempo de elaboración objetivo?",
+        "valor01": "55%",
+        "tipoEvolucion01": "mala",
+        "infoValor01": "De los informes entregados con atraso",
+        "infoValor02": "Promedio último mes",
+        "valor02evolucion": "+13%",
+        "tipoEvolucion02": "neutra",
+        "tipoIcono": "sube",
+        "inforValor02evolucion": "Aumentó en relación al mes anterior",
+        "valor03benchmark": "65%",
+        "info01valor03benchmark": "Entrega a tiempo",
+        "info02valor03benchmark": "Promedio último mes"
       },
       {
         "pregunta": "De los médicos que más volumen informan, ¿Cuál es su porcentaje de cumplimiento?",

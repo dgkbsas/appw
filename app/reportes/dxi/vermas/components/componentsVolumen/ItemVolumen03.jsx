@@ -43,10 +43,7 @@ export default function ItemVolumen03({ datos, dataDxI }) {
             }}
           >
             <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}>
-              <div
-                className="containerSuperiorVolumen01"
-                style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9", width: "550px" }}
-              >
+              <div className="containerSuperiorVolumen01" style={{ display: "flex", alignItems: "center", borderRight: "solid 1px #d9d9d9" }}>
                 {datos.tipoEvolucion01 === "buena" && (
                   <div className="containerDato01 verde">
                     <span className="valor01" style={{ fontSize: "70px" }}>
@@ -102,7 +99,7 @@ export default function ItemVolumen03({ datos, dataDxI }) {
                 )}
                 <span className="inforValor02evolucion">{datos.inforValor02evolucion}</span>
               </div>
-              <div
+              {/* <div
                 className="infoBenchmarkVolumen02"
                 style={{
                   marginLeft: "32px",
@@ -118,7 +115,7 @@ export default function ItemVolumen03({ datos, dataDxI }) {
                 }}
               >
                 <p style={{ fontSize: "12px", fontWeight: "500" }}>BENCHMARK</p>
-              </div>
+              </div> */}
             </div>
             <p
               style={{
