@@ -65,10 +65,10 @@ export default function TopBarHeader() {
           ))}
         </div>
       </div>
-      <div className="rightHeaderpart">
+      {/* <div className="rightHeaderpart">
         <Image className="logoTopBar" name="Print BTN" src={logoPrint} alt="/" onClick={functionPrint} />
         <Image className="logoTopBar" name="Share BTN" src={logoShare} alt="/" onClick={functionShare} />
-      </div>
+      </div> */}
     </div>
   );
 }
