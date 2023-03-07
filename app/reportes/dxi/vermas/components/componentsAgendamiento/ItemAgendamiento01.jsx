@@ -107,7 +107,7 @@ export default function ItemAgendamiento01({ datos, diasEvaluados }) {
                     </div>
                     <span className="info01valor03benchmark">{datos.info01valor03benchmark}</span>
                     <span className="info02valor03benchmark">{datos.info02valor03benchmark}</span>
-                  </div>{" "}
+                  </div>
                 </div>
               </div>
             </div>
@@ -117,6 +117,9 @@ export default function ItemAgendamiento01({ datos, diasEvaluados }) {
             <div className="containerVolumen03" style={{ display: "flex", marginTop: "8px", alignItems: "center" }}>
               <div className="containerVolumen02" style={{ position: "relative" }}>
                 <Plot data={datos.data} layout={datos.layout} config={datos.config} />
+                <br />
+                <br />
+                <Plot data={datos.data2} layout={datos.layout2} config={datos.config2} />
               </div>
             </div>
           </div>
