@@ -12,7 +12,7 @@ import iconEvoBuena from "@/app/assets/statics/icons/tipoEvolucionBuena.svg";
 import iconEvoMala from "@/app/assets/statics/icons/tipoEvolucionMala.svg";
 import wIcon from "@/app/assets/statics/logo.svg";
 
-export default function ItemAgendamiento01({ datos, dataDxI }) {
+export default function ItemAgendamiento01({ datos, diasEvaluados }) {
   return (
     <>
       {datos != undefined && (
@@ -109,6 +109,14 @@ export default function ItemAgendamiento01({ datos, dataDxI }) {
                     <span className="info02valor03benchmark">{datos.info02valor03benchmark}</span>
                   </div>{" "}
                 </div>
+              </div>
+            </div>
+            <p className="tituloPreguntaVerMas" id="tituloPreguntaVerMas-Mobile" style={{ fontSize: "14px", marginTop: "16px", marginBottom: "8px" }}>
+              ¿Cómo se relaciona la cantidad de días de anticipación del turno con la cantidad de ausencias?
+            </p>
+            <div className="containerVolumen03" style={{ display: "flex", marginTop: "8px", alignItems: "center" }}>
+              <div className="containerVolumen02" style={{ position: "relative" }}>
+                <Plot data={datos.data} layout={datos.layout} config={datos.config} />
               </div>
             </div>
           </div>

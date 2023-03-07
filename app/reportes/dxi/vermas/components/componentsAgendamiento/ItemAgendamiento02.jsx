@@ -33,7 +33,13 @@ export default function ItemAgendamiento02({ datos, dataDxI }) {
               flexDirection: "column",
             }}
           >
-            <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}></div>
+            <div className="containerVolumen01" style={{ display: "flex", alignItems: "center", width: "100%" }}>
+              <div className="containerVolumen03" style={{ display: "flex", marginTop: "8px", alignItems: "center" }}>
+                <div className="containerVolumen02" style={{ position: "relative" }}>
+                  <Plot data={datos.data} layout={datos.layout} config={datos.config} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

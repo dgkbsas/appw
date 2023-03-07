@@ -34,13 +34,200 @@
         "inforValor02evolucion": "Sin variación",
         "valor03benchmark": "03",
         "info01valor03benchmark": "Días de espera",
-        "info02valor03benchmark": "Promedio último mes"
+        "info02valor03benchmark": "Promedio último mes",
+        "data": [
+          {
+            "x": ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
+            "y": [8, 11, 14, 19, 16, 8, 11, 12, 15, 3, 0, 5, 5, 1, 12, 12, 9, 18, 17, 2],
+            "type": "bar",
+            "marker": { "color": "#92C1D0" },
+            "mode": "markers+text",
+            "opacity": 1,
+            "textposition": "auto",
+            "text": [8, 11, 14, 19, 16, 8, 11, 12, 15, 3, 0, 5, 5, 1, 12, 12, 9, 18, 17, 2],
+            "textfont": {
+              "size": 10
+            },
+            "name": "Se presentaron al turno",
+            "yaxis": "y"
+          },
+
+          {
+            "x": ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
+            "y": [8, 11, 14, 19, 16, 8, 11, 12, 15, 3, 0, 5, 5, 1, 12, 12, 9, 18, 17, 2],
+            "type": "bar",
+            "marker": { "color": "#EA9ADD" },
+            "mode": "markers+text",
+            "opacity": 1,
+            "textposition": "auto",
+            "text": [8, 11, 14, 19, 16, 8, 11, 12, 15, 3, 0, 5, 5, 1, 12, 12, 9, 18, 17, 2],
+            "textfont": {
+              "size": 10
+            },
+            "name": "No se presentaron al turno",
+            "yaxis": "y"
+          }
+        ],
+        "layout": {
+          "font": {
+            "color": "#1c1c1c"
+          },
+          "width": 980,
+          "height": 160,
+          "margin": {
+            "l": 30,
+            "b": 30,
+            "r": 0,
+            "t": 0
+          },
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "hovermode": true,
+          "clickmode": "none",
+          "showlegend": true,
+          "legend": {
+            "x": 1,
+            "y": 0
+          },
+          "bargap": 0.1,
+          "barmode": "stack",
+          "bargroupgap": 0.1,
+
+          "yaxis": {
+            "tickfont": {
+              "size": 10
+            },
+            "title": "Cantidad de Pacientes",
+            "titlefont": {
+              "size": 10
+            },
+            "rangemode": "tozero",
+            "autorange": true
+          },
+          "xaxis": {
+            "tickfont": {
+              "size": 10
+            },
+            "dtick": 1,
+            "title": "Días previos que agendaron el turno",
+            "titlefont": {
+              "size": 10
+            }
+          },
+          "dragmode": false
+        },
+        "config": {
+          "responsive": true,
+          "displayModeBar": false
+        }
       },
       {
-        "pregunta": "¿Cómo evolucionó el tiempo de espera de turno en el último año?"
+        "pregunta": "¿Cómo evolucionó el tiempo de espera de turno en el último año?",
+        "data": [
+          {
+            "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
+            "type": "scatter",
+            "y": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "marker": { "color": "#92C1D0" },
+            "mode": "lines+markers+text",
+            "opacity": 1,
+            "textposition": "top",
+            "text": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "textfont": {
+              "size": 10
+            },
+            "name": "Dias de espera / mes",
+            "yaxis": "y"
+          },
+          {
+            "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
+            "y": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+            "type": "scatter",
+            "marker": { "color": "#EA9ADD" },
+            "mode": "lines",
+            "opacity": 1,
+            "textposition": "auto",
+            "textfont": {
+              "size": 10
+            },
+            "name": "Promedio último mes",
+            "yaxis": "y",
+            "line": {
+              "dash": "dot",
+              "width": 2
+            }
+          },
+          {
+            "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
+            "y": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+            "type": "scatter",
+            "marker": { "color": "#49307d" },
+            "mode": "lines",
+            "opacity": 1,
+            "textposition": "auto",
+            "textfont": {
+              "size": 10
+            },
+            "name": "Wúru Benchmark",
+            "yaxis": "y",
+            "line": {
+              "width": 2
+            }
+          }
+        ],
+        "layout": {
+          "font": {
+            "color": "#1c1c1c"
+          },
+          "width": 980,
+          "height": 160,
+          "margin": {
+            "l": 30,
+            "b": 30,
+            "r": 0,
+            "t": 0
+          },
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "hovermode": true,
+          "clickmode": "none",
+          "showlegend": true,
+          "legend": {
+            "x": 1,
+            "y": 0
+          },
+          "bargap": 0.1,
+          "bargroupgap": 0.1,
+          "yaxis": {
+            "tickfont": {
+              "size": 10
+            },
+            "title": "Días de espera promedio",
+            "titlefont": {
+              "size": 10
+            },
+            "rangemode": "tozero",
+            "autorange": true,
+            "dtick": 2
+          },
+          "xaxis": {
+            "tickfont": {
+              "size": 10
+            },
+
+            "titlefont": {
+              "size": 10
+            }
+          },
+          "dragmode": false
+        },
+        "config": {
+          "responsive": true,
+          "displayModeBar": false
+        }
       },
       {
-        "pregunta": "¿Cuántos pacientes no se presentan a sus turnos agendados?"
+        "pregunta": "¿Qué relación hay entre los días de espera y el procedimiento a realizar?"
       }
     ]
   },
@@ -706,9 +893,9 @@
     "quality": "",
     "info01": "",
     "info02": "",
-    "valor01": "27%",
+    "valor01": "73%",
     "tipoEvolucion01": "mala",
-    "infoValor01": "De los informes entregados con atraso",
+    "infoValor01": "De los informes entregados a tiempo",
     "infoValor02": "Promedio último mes",
     "valor02evolucion": "+03%",
     "tipoEvolucion02": "neutra",
