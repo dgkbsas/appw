@@ -115,7 +115,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
               </div>
             </div>
             <p className="tituloPreguntaVerMas" id="tituloPreguntaVerMas-Mobile" style={{ fontSize: "14px", marginTop: "16px", marginBottom: "8px" }}>
-              De los procedimientos con mas informes entregados, ¿Que orígen tienen y cuál es el porcentaje de cumpliento?
+              De los procedimientos con mas informes entregados, ¿Que orígen tienen y cuál es el porcentaje de cumplimiento?
             </p>
             <div
               className="containerInfoPreguntas-vermas"
