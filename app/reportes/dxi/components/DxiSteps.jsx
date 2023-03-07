@@ -69,7 +69,10 @@ export default function dxiSteps(props) {
                 </div>
               )}
               <div className="containerInfo01">
-                <span className="infoValor01">{dataItem.infoValor01}</span> <span className="infoValor02">{dataItem.infoValor02}</span>
+                <span className="infoValor01" style={{ width: " 160px" }}>
+                  {dataItem.infoValor01}
+                </span>{" "}
+                <span className="infoValor02">{dataItem.infoValor02}</span>
               </div>
             </div>
 

@@ -62,7 +62,10 @@ export default function ItemVolumen01({ datos, diasEvaluados }) {
                   </div>
                 )}
                 <div className="containerInfo01">
-                  <span className="infoValor01">{datos.infoValor01}</span> <span className="infoValor02">{datos.infoValor02}</span>
+                  <span className="infoValor01" style={{ width: " 180px", marginRight: "24px" }}>
+                    {datos.infoValor01}
+                  </span>{" "}
+                  <span className="infoValor02">{datos.infoValor02}</span>
                 </div>
               </div>
               <div

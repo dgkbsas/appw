@@ -53,7 +53,10 @@ export default function ItemInformes01({ datos, dataDxI }) {
                     </div>
                   )}
                   <div className="containerInfo01">
-                    <span className="infoValor01">{datos.infoValor01}</span> <span className="infoValor02">{datos.infoValor02}</span>
+                    <span className="infoValor01" style={{ width: " 160px", marginRight: "24px" }}>
+                      {datos.infoValor01}
+                    </span>{" "}
+                    <span className="infoValor02">{datos.infoValor02}</span>
                   </div>
                 </div>
                 <div

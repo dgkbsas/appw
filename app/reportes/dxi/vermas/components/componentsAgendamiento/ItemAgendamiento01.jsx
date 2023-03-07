@@ -53,7 +53,10 @@ export default function ItemAgendamiento01({ datos, diasEvaluados }) {
                     </div>
                   )}
                   <div className="containerInfo01">
-                    <span className="infoValor01">{datos.infoValor01}</span> <span className="infoValor02">{datos.infoValor02}</span>
+                    <span className="infoValor01" style={{ width: " 180px", marginRight: "12px" }}>
+                      {datos.infoValor01}
+                    </span>{" "}
+                    <span className="infoValor02">{datos.infoValor02}</span>
                   </div>
                 </div>
                 <div
@@ -118,7 +121,7 @@ export default function ItemAgendamiento01({ datos, diasEvaluados }) {
               <div className="containerVolumen02" style={{ position: "relative" }}>
                 <Plot data={datos.data} layout={datos.layout} config={datos.config} />
                 <br />
-                <br />
+                <p></p>
                 <Plot data={datos.data2} layout={datos.layout2} config={datos.config2} />
               </div>
             </div>

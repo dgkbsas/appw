@@ -489,7 +489,18 @@
         }
       },
       {
-        "pregunta": "¿Cuántos pacientes se retiran de la institución antes de ser atendidos?"
+        "pregunta": "¿Cuántos pacientes se retiran de la institución antes de ser atendidos?",
+        "valor01": "02",
+        "tipoEvolucion01": "mala",
+        "infoValor01": "Pacientes se retiran por día antes de ser atendidos",
+        "infoValor02": "Promedio último mes",
+        "valor02evolucion": "+26%",
+        "tipoEvolucion02": "neutra",
+        "tipoIcono": "sube",
+        "inforValor02evolucion": "Aumentó en relación al mes anterior",
+        "valor03benchmark": "05",
+        "info01valor03benchmark": "Pacientes se retiran",
+        "info02valor03benchmark": "Promedio último mes"
       }
     ]
   },
@@ -990,7 +1001,35 @@
         "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
         "valor03benchmark": "65%",
         "info01valor03benchmark": "Entrega a tiempo",
-        "info02valor03benchmark": "Promedio último mes"
+        "info02valor03benchmark": "Promedio último mes",
+        "year": "2023",
+        "month": "01",
+        "data": [
+          {
+            "procedimiento": "Gonzalo Sierra",
+            "origen": "87",
+            "cumplimiento": "48",
+            "tiempoElaboracion": "47.32"
+          },
+          {
+            "procedimiento": "Nereida Rios",
+            "origen": "22",
+            "cumplimiento": "45",
+            "tiempoElaboracion": "35.41"
+          },
+          {
+            "procedimiento": "Israel Lara",
+            "origen": "18",
+            "cumplimiento": "44",
+            "tiempoElaboracion": "72.44"
+          },
+          {
+            "procedimiento": "Michael Simons",
+            "origen": "16",
+            "cumplimiento": "50",
+            "tiempoElaboracion": "33.29"
+          }
+        ]
       }
     ]
   },

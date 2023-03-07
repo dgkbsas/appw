@@ -998,7 +998,35 @@
         "inforValor02evolucion": "Aumentó en relación  al mes anterior",
         "valor03benchmark": "80%",
         "info01valor03benchmark": "Entrega a tiempo",
-        "info02valor03benchmark": "Promedio último mes"
+        "info02valor03benchmark": "Promedio último mes",
+        "year": "2023",
+        "month": "01",
+        "data": [
+          {
+            "procedimiento": "Gonzalo Sierra",
+            "origen": "87",
+            "cumplimiento": "48",
+            "tiempoElaboracion": "47.32"
+          },
+          {
+            "procedimiento": "Nereida Rios",
+            "origen": "22",
+            "cumplimiento": "45",
+            "tiempoElaboracion": "35.41"
+          },
+          {
+            "procedimiento": "Israel Lara",
+            "origen": "18",
+            "cumplimiento": "44",
+            "tiempoElaboracion": "72.44"
+          },
+          {
+            "procedimiento": "Michael Simons",
+            "origen": "16",
+            "cumplimiento": "50",
+            "tiempoElaboracion": "33.29"
+          }
+        ]
       }
     ]
   },

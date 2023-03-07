@@ -53,7 +53,10 @@ export default function ItemInformes02({ datos, dataDxI }) {
                     </div>
                   )}
                   <div className="containerInfo01">
-                    <span className="infoValor01">{datos.infoValor01}</span> <span className="infoValor02">{datos.infoValor02}</span>
+                    <span className="infoValor01" style={{ width: " 160px", marginRight: "24px" }}>
+                      {datos.infoValor01}
+                    </span>{" "}
+                    <span className="infoValor02">{datos.infoValor02}</span>
                   </div>
                 </div>
                 <div
@@ -109,6 +112,189 @@ export default function ItemInformes02({ datos, dataDxI }) {
                     <span className="info02valor03benchmark">{datos.info02valor03benchmark}</span>
                   </div>{" "}
                 </div>
+              </div>
+            </div>
+            <p className="tituloPreguntaVerMas" id="tituloPreguntaVerMas-Mobile" style={{ fontSize: "14px", marginTop: "16px", marginBottom: "8px" }}>
+              De los procedimientos con mas informes entregados, ¿Que orígen tienen y cuál es el porcentaje de cumpliento?
+            </p>
+            <div
+              className="containerInfoPreguntas-vermas"
+              style={{
+                backgroundColor: "#f8f8f8",
+                display: "flex",
+                alignItems: "flex-start",
+                borderRadius: "5px",
+                flexDirection: "column",
+                width: "100%",
+              }}
+            >
+              <p
+                style={{
+                  margin: 1,
+                  fontSize: "14px",
+                  fontWeight: "400",
+                  marginBottom: "4px",
+                  marginTop: "12px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                }}
+              >
+                <span>
+                  <strong>PRINCIPALES</strong> PROCEDIMIENTOS INFORMADOS
+                </span>
+                <span style={{ fontSize: "11px", marginLeft: "16px", opacity: "0.5" }}>
+                  Datos pertenecientes al {datos.month}/{datos.year}
+                </span>
+              </p>
+              <div
+                className="containerVolumen02"
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  overflow: "hidden",
+                  marginTop: "4px",
+                  marginBottom: "4px",
+                  border: "solid 0.5px #1c1c1c20",
+                }}
+              >
+                <div
+                  style={{
+                    display: "grid",
+                    alignItems: "center",
+                    gridTemplateColumns: "1.1fr .5fr .5fr .7fr",
+                    color: "#1c1c1c",
+                    fontSize: "10px",
+                    fontWeight: "500",
+                  }}
+                >
+                  <p
+                    style={{
+                      margin: 0,
+                      border: "solid 0.5px #1c1c1c20",
+                      backgroundColor: "#D8D8D8",
+                      height: "22px",
+                      display: "flex",
+                      alignItems: "center",
+                      paddingLeft: "16px",
+                    }}
+                  >
+                    PROCEDIMIENTOS
+                  </p>
+                  <p
+                    style={{
+                      margin: 0,
+                      border: "solid 0.5px #1c1c1c20",
+
+                      backgroundColor: "#D8D8D8",
+                      height: "22px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    ORÍGEN
+                  </p>
+                  <p
+                    style={{
+                      margin: 0,
+                      border: "solid 0.5px #1c1c1c20",
+
+                      textAlign: "center",
+                      backgroundColor: "#D8D8D8",
+                      height: "22px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    % CUMPLIMIENTO
+                  </p>
+                  <p
+                    style={{
+                      margin: 0,
+                      border: "solid 0.5px #1c1c1c20",
+
+                      textAlign: "center",
+                      backgroundColor: "#D8D8D8",
+                      height: "22px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    TIEMPO DE ELABORACIÓN (Hs.)
+                  </p>
+                </div>
+                {datos.data != "" ? (
+                  <>
+                    {datos.data.map((item) => (
+                      <div
+                        style={{
+                          display: "grid",
+                          alignItems: "center",
+                          gridTemplateColumns: "1.1fr .5fr .5fr .7fr",
+                          color: "#1c1c1c",
+                          fontSize: "12px",
+                          fontWeight: "700",
+                        }}
+                      >
+                        <p
+                          style={{
+                            margin: 0,
+                            border: "solid 0.5px #1c1c1c20",
+                            height: "26px",
+                            display: "flex",
+                            alignItems: "center",
+                            paddingLeft: "16px",
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                          }}
+                        >
+                          {item.procedimiento}
+                        </p>
+                        <p
+                          style={{
+                            margin: 0,
+                            border: "solid 0.5px #1c1c1c20",
+                            height: "26px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          {item.origen}
+                        </p>
+                        <p
+                          style={{
+                            margin: 0,
+                            border: "solid 0.5px #1c1c1c20",
+                            height: "26px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "16px",
+                          }}
+                        >
+                          {item.cumplimiento}%
+                        </p>
+                        <p
+                          style={{
+                            margin: 0,
+                            border: "solid 0.5px #1c1c1c20",
+                            height: "26px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          {item.tiempoElaboracion}
+                        </p>
+                      </div>
+                    ))}
+                  </>
+                ) : null}
               </div>
             </div>
           </div>
