@@ -56,7 +56,7 @@ a {
   padding-top: 80px;
   margin-top: 60px;
   color: #1c1c1c;
-  overflow: hidden;
+  overflow: auto;
   overflow-y: scroll;
 }
 
