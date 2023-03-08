@@ -20,7 +20,7 @@ body {
   color: #1c1c1c;
   display: flex;
   font-family: "Roboto", sans-serif;
-  overflow: auto;
+  margin-bottom: 32px;
 }
 
 a {

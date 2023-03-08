@@ -244,12 +244,12 @@
           {
             "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
             "type": "scatter",
-            "y": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "y": [4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 5, 3],
             "marker": { "color": "#92C1D0" },
             "mode": "lines+markers+text",
             "opacity": 1,
             "textposition": "top",
-            "text": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "text": [4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 5, 3],
             "textfont": {
               "size": 10
             },
@@ -258,7 +258,7 @@
           },
           {
             "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
-            "y": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+            "y": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
             "type": "scatter",
             "marker": { "color": "#EA9ADD" },
             "mode": "lines",
@@ -324,7 +324,7 @@
               "size": 10
             },
             "rangemode": "tozero",
-            "autorange": true,
+            "range": [0, 10],
             "dtick": 2
           },
           "xaxis": {
@@ -344,7 +344,41 @@
         }
       },
       {
-        "pregunta": "¿Qué relación hay entre los días de espera y el procedimiento a realizar?"
+        "pregunta": "De los procedimientos que más se realizan, ¿Cuál es su tiempo a próximo turno promedio?",
+        "year": "2023",
+        "month": "01",
+        "data": [
+          {
+            "procedimiento": "UROCAT",
+            "esperaTurno": "05",
+            "cantidad": "138",
+            "porcentajeDelTotal": "35"
+          },
+          {
+            "procedimiento": "CT CEREBRO, SIMPLE, SIN CONT",
+            "esperaTurno": "04",
+            "cantidad": "127",
+            "porcentajeDelTotal": "22"
+          },
+          {
+            "procedimiento": "CT PARANASAL MAXILOFACIAL S C",
+            "esperaTurno": "04",
+            "cantidad": "97",
+            "porcentajeDelTotal": "18"
+          },
+          {
+            "procedimiento": "CT TORAX SIMPLE SIN CONTRASTE",
+            "esperaTurno": "04",
+            "cantidad": "96",
+            "porcentajeDelTotal": "10"
+          },
+          {
+            "procedimiento": "ABDOMEN SUPERIOR E INF CON Y SIN CONT",
+            "esperaTurno": "04",
+            "cantidad": "76",
+            "porcentajeDelTotal": "08"
+          }
+        ]
       }
     ]
   },
@@ -362,7 +396,7 @@
     "tipoEvolucion02": "neutra",
     "tipoIcono": "sube",
     "inforValor02evolucion": "Aumentó en relación al mes anterior",
-    "valor03benchmark": "11",
+    "valor03benchmark": "44",
     "info01valor03benchmark": "Minutos de espera",
     "info02valor03benchmark": "Promedio último mes",
     "verMas": [
@@ -953,6 +987,20 @@
         "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
         "valor03benchmark": "48",
         "info01valor03benchmark": "Horas hasta la entrega",
+        "info02valor03benchmark": "Promedio último mes"
+      },
+      {
+        "pregunta": "¿Cuántos informes se entregan dentro del tiempo de elaboración objetivo?",
+        "valor01": "45%",
+        "tipoEvolucion01": "mala",
+        "infoValor01": "De los informes entregados a tiempo",
+        "infoValor02": "Promedio último mes",
+        "valor02evolucion": "-13%",
+        "tipoEvolucion02": "neutra",
+        "tipoIcono": "sube",
+        "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
+        "valor03benchmark": "65%",
+        "info01valor03benchmark": "Entrega a tiempo",
         "info02valor03benchmark": "Promedio último mes",
         "year": "2023",
         "month": "01",
@@ -990,7 +1038,7 @@
         ]
       },
       {
-        "pregunta": "¿Cuántos informes se entregan dentro del tiempo de elaboración objetivo?",
+        "pregunta": "¿Cuál es el porcentaje de cumplimiento segun el origen del procedimiento?",
         "valor01": "45%",
         "tipoEvolucion01": "mala",
         "infoValor01": "De los informes entregados a tiempo",
@@ -1006,25 +1054,25 @@
         "month": "01",
         "data": [
           {
-            "procedimiento": "Gonzalo Sierra",
+            "procedimiento": "Ambulatorio",
             "origen": "87",
             "cumplimiento": "48",
             "tiempoElaboracion": "47.32"
           },
           {
-            "procedimiento": "Nereida Rios",
+            "procedimiento": "Hospitalizado",
             "origen": "22",
             "cumplimiento": "45",
             "tiempoElaboracion": "35.41"
           },
           {
-            "procedimiento": "Israel Lara",
+            "procedimiento": "Hospiturg",
             "origen": "18",
             "cumplimiento": "44",
             "tiempoElaboracion": "72.44"
           },
           {
-            "procedimiento": "Michael Simons",
+            "procedimiento": "Urgencia",
             "origen": "16",
             "cumplimiento": "50",
             "tiempoElaboracion": "33.29"

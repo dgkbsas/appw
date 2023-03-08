@@ -115,7 +115,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
               </div>
             </div>
             <p className="tituloPreguntaVerMas" id="tituloPreguntaVerMas-Mobile" style={{ fontSize: "14px", marginTop: "16px", marginBottom: "8px" }}>
-              De los procedimientos con mas informes entregados, ¿Que orígen tienen y cuál es el porcentaje de cumplimiento?
+              De los médicos que más volumen informan, ¿Cuál es su porcentaje de cumplimiento?
             </p>
             <div
               className="containerInfoPreguntas-vermas"
@@ -142,7 +142,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                 }}
               >
                 <span>
-                  <strong>PRINCIPALES</strong> PROCEDIMIENTOS INFORMADOS
+                  <strong>PRINCIPALES</strong> MÉDICOS FIRMANTES
                 </span>
                 <span style={{ fontSize: "11px", marginLeft: "16px", opacity: "0.5" }}>
                   Datos pertenecientes al {datos.month}/{datos.year}
@@ -180,7 +180,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                       paddingLeft: "16px",
                     }}
                   >
-                    PROCEDIMIENTOS
+                    MÉDICO FIRMANTE
                   </p>
                   <p
                     style={{
@@ -194,7 +194,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                       justifyContent: "center",
                     }}
                   >
-                    ORÍGEN
+                    INFORMES FIRMADOS
                   </p>
                   <p
                     style={{
@@ -224,7 +224,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                       justifyContent: "center",
                     }}
                   >
-                    TIEMPO DE ELABORACIÓN (Hs.)
+                    TIEMPO DE ELABORACIÓN PROMEDIO (Hs.)
                   </p>
                 </div>
                 {datos.data != "" ? (
@@ -252,7 +252,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                             overflow: "hidden",
                           }}
                         >
-                          {item.procedimiento}
+                          {item.medicoFirmante}
                         </p>
                         <p
                           style={{
@@ -264,7 +264,7 @@ export default function ItemInformes02({ datos, dataDxI }) {
                             justifyContent: "center",
                           }}
                         >
-                          {item.origen}
+                          {item.firmados}
                         </p>
                         <p
                           style={{

@@ -245,12 +245,12 @@
           {
             "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
             "type": "scatter",
-            "y": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "y": [3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4, 1],
             "marker": { "color": "#92C1D0" },
             "mode": "lines+markers+text",
             "opacity": 1,
             "textposition": "top",
-            "text": [8, 5, 2, 6, 8, 10, 7, 5, 2, 3, 2, 4],
+            "text": [3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4, 1],
             "textfont": {
               "size": 10
             },
@@ -259,7 +259,7 @@
           },
           {
             "x": ["Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"],
-            "y": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+            "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
             "type": "scatter",
             "marker": { "color": "#EA9ADD" },
             "mode": "lines",
@@ -325,7 +325,7 @@
               "size": 10
             },
             "rangemode": "tozero",
-            "autorange": true,
+            "range": [0, 10],
             "dtick": 2
           },
           "xaxis": {
@@ -345,7 +345,7 @@
         }
       },
       {
-        "pregunta": "¿Qué relación hay entre los días de espera y el procedimiento a realizar?"
+        "pregunta": "De los procedimientos que más se realizan, ¿Cuál es su tiempo a próximo turno promedio?"
       }
     ]
   },
@@ -944,6 +944,20 @@
         "inforValor02evolucion": "Aumentó en relación  al mes anterior",
         "valor03benchmark": "12",
         "info01valor03benchmark": "Horas hasta la entrega",
+        "info02valor03benchmark": "Promedio último mes"
+      },
+      {
+        "pregunta": "¿Cuántos informes se entregan dentro del tiempo de elaboración objetivo?",
+        "valor01": "73%",
+        "tipoEvolucion01": "mala",
+        "infoValor01": "De los informes entregados a tiempo",
+        "infoValor02": "Promedio último mes",
+        "valor02evolucion": "+03%",
+        "tipoEvolucion02": "neutra",
+        "tipoIcono": "sube",
+        "inforValor02evolucion": "Aumentó en relación  al mes anterior",
+        "valor03benchmark": "80%",
+        "info01valor03benchmark": "Entrega a tiempo",
         "info02valor03benchmark": "Promedio último mes",
         "year": "2023",
         "month": "01",
@@ -987,41 +1001,41 @@
         ]
       },
       {
-        "pregunta": "¿Cuántos informes se entregan dentro del tiempo de elaboración objetivo?",
-        "valor01": "73%",
+        "pregunta": "¿Cuál es el porcentaje de cumplimiento segun el origen del procedimiento?",
+        "valor01": "45%",
         "tipoEvolucion01": "mala",
         "infoValor01": "De los informes entregados a tiempo",
         "infoValor02": "Promedio último mes",
-        "valor02evolucion": "+03%",
+        "valor02evolucion": "-13%",
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
-        "inforValor02evolucion": "Aumentó en relación  al mes anterior",
-        "valor03benchmark": "80%",
+        "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
+        "valor03benchmark": "65%",
         "info01valor03benchmark": "Entrega a tiempo",
         "info02valor03benchmark": "Promedio último mes",
         "year": "2023",
         "month": "01",
         "data": [
           {
-            "procedimiento": "Gonzalo Sierra",
+            "procedimiento": "Ambulatorio",
             "origen": "87",
             "cumplimiento": "48",
             "tiempoElaboracion": "47.32"
           },
           {
-            "procedimiento": "Nereida Rios",
+            "procedimiento": "Hospitalizado",
             "origen": "22",
             "cumplimiento": "45",
             "tiempoElaboracion": "35.41"
           },
           {
-            "procedimiento": "Israel Lara",
+            "procedimiento": "Hospiturg",
             "origen": "18",
             "cumplimiento": "44",
             "tiempoElaboracion": "72.44"
           },
           {
-            "procedimiento": "Michael Simons",
+            "procedimiento": "Urgencia",
             "origen": "16",
             "cumplimiento": "50",
             "tiempoElaboracion": "33.29"
