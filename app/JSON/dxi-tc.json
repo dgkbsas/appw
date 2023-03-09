@@ -109,7 +109,7 @@
               "size": 10
             },
             "dtick": 1,
-            "title": "Días de espera al turno",
+            "title": "Días de aniticipación al turno",
             "titlefont": {
               "size": 10
             }
@@ -216,7 +216,7 @@
               "size": 10
             },
             "dtick": 1,
-            "title": "Días de espera al turno",
+            "title": "Días de anticipación al turno",
             "titlefont": {
               "size": 10
             }
@@ -345,7 +345,41 @@
         }
       },
       {
-        "pregunta": "De los procedimientos que más se realizan, ¿Cuál es su tiempo a próximo turno promedio?"
+        "pregunta": "De los procedimientos que más se realizan, ¿Cuál es su tiempo a próximo turno promedio?",
+        "year": "2023",
+        "month": "01",
+        "data": [
+          {
+            "procedimiento": "UROCAT",
+            "esperaTurno": "05",
+            "cantidad": "138",
+            "porcentajeDelTotal": "35"
+          },
+          {
+            "procedimiento": "CT CEREBRO, SIMPLE, SIN CONT",
+            "esperaTurno": "04",
+            "cantidad": "127",
+            "porcentajeDelTotal": "22"
+          },
+          {
+            "procedimiento": "CT PARANASAL MAXILOFACIAL S C",
+            "esperaTurno": "04",
+            "cantidad": "97",
+            "porcentajeDelTotal": "18"
+          },
+          {
+            "procedimiento": "CT TORAX SIMPLE SIN CONTRASTE",
+            "esperaTurno": "04",
+            "cantidad": "96",
+            "porcentajeDelTotal": "10"
+          },
+          {
+            "procedimiento": "ABDOMEN SUPERIOR E INF CON Y SIN CONT",
+            "esperaTurno": "04",
+            "cantidad": "76",
+            "porcentajeDelTotal": "08"
+          }
+        ]
       }
     ]
   },
@@ -522,6 +556,10 @@
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
         "inforValor02evolucion": "Aumentó en relación al mes anterior",
+        "valor03benchmark": "58",
+        "info01valor03benchmark": "Estudios por día",
+        "info02valor03benchmark": "Promedio último mes",
+
         "data": [
           {
             "x": ["Lun", "Mar", "Mier", "Juev", "Vier", "Sab", "Dom"],

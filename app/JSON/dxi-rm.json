@@ -37,14 +37,14 @@
         "info02valor03benchmark": "Promedio último mes",
         "data": [
           {
-            "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
-            "y": [0, 203, 176, 148, 119, 116, 108, 57, 28, 20, 11, 13, 8, 11, 6, 4, 1, 3, 3, 3, 2, 1, 2, 1, 1, 2],
+            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "y": [18, 10, 11, 4, 5, 6, 4, 0, 0, 1, 1, 1, 2, 0, 0],
             "type": "bar",
             "marker": { "color": "#92C1D0" },
             "mode": "markers+text",
             "opacity": 1,
             "textposition": "auto",
-            "text": [203, 176, 148, 119, 116, 108, 57, 28, 20, 11, 13, 8, 11, 6, 4, 1, 3, 3, 3, 2, 1, 2, 1, 1, 2],
+            "text": [18, 10, 11, 4, 5, 6, 4, 0, 0, 1, 1, 1, 2, 0, 0],
             "textfont": {
               "size": 10
             },
@@ -52,18 +52,18 @@
             "yaxis": "y"
           },
           {
-            "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
-            "y": [0, 55, 40, 31, 26, 29, 30, 18, 6, 10, 5, 4, 2, 5, 3, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "y": [7, 2, 2, 3, 2, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0],
             "type": "bar",
             "marker": { "color": "#EA9ADD" },
             "mode": "markers+text",
             "opacity": 1,
             "textposition": "auto",
-            "text": [55, 40, 31, 26, 29, 30, 18, 6, 10, 5, 4, 2, 5, 3, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+            "text": [7, 2, 2, 3, 2, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0],
             "textfont": {
               "size": 10
             },
-            "name": "No se presentaron al turno",
+            "name": "Cancelaron el turno",
             "yaxis": "y"
           }
         ],
@@ -108,7 +108,7 @@
               "size": 10
             },
             "dtick": 1,
-            "title": "Días de espera al turno",
+            "title": "Días de anticipación al turno",
             "titlefont": {
               "size": 10
             }
@@ -121,13 +121,13 @@
         },
         "data2": [
           {
-            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
-            "y": [258, 216, 179, 145, 145, 138, 75, 34, 30, 16, 17, 10, 16, 9, 6, 2, 3, 3, 3, 3, 1, 2, 1, 1, 2],
+            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "y": [25, 12, 13, 7, 7, 7, 4, 0, 0, 1, 2, 1, 2, 1, 0],
             "type": "bar",
             "mode": "markers+text",
             "marker": { "color": "#EAAB7E" },
             "opacity": 1,
-            "text": [258, 216, 179, 145, 145, 138, 75, 34, 30, 16, 17, 10, 16, 9, 6, 2, 3, 3, 3, 3, 1, 2, 1, 1, 2],
+            "text": [25, 12, 13, 7, 7, 7, 4, 0, 0, 1, 2, 1, 2, 1, 0],
             "textposition": "outside",
             "textfont": {
               "size": 10
@@ -136,39 +136,14 @@
             "yaxis": "y2"
           },
           {
-            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
-            "y": [21, 19, 17, 18, 20, 22, 24, 18, 33, 31, 24, 20, 31, 33, 33, 50, 0, 0, 0, 33, 0, 0, 0, 0],
+            "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "y": [28, 17, 15, 43, 29, 14, 0, 0, 0, 0, 50, 0, 0, 100, 0],
             "type": "scatter",
             "mode": "lines+markers+text",
             "marker": { "color": "#6699C3" },
             "opacity": 1,
             "textposition": "top center",
-            "text": [
-              "21%",
-              "19%",
-              "17%",
-              "18%",
-              "20%",
-              "22%",
-              "24%",
-              "18%",
-              "33%",
-              "31%",
-              "24%",
-              "20%",
-              "31%",
-              "33%",
-              "33%",
-              "50%",
-              "0%",
-              "0%",
-              "0%",
-              "33%",
-              "0%",
-              "0%",
-              "0%",
-              "0%"
-            ],
+            "text": ["28%", "17%", "15%", "43%", "29%", "14%", "0%", "0%", "0%", "0%", "50%", "0%", "0%", "100%", "0%"],
             "textfont": {
               "size": 10
             },
@@ -215,7 +190,7 @@
               "size": 10
             },
             "dtick": 1,
-            "title": "Días de espera al turno",
+            "title": "Días de aniticipación al turno",
             "titlefont": {
               "size": 10
             }
@@ -389,7 +364,7 @@
     "info01": "Desde admisión al incio de estudio",
     "info02": "Estudios programados",
     "valor01": "19",
-    "tipoEvolucion01": "mala",
+    "tipoEvolucion01": "buena",
     "infoValor01": "Minutos de espera en sala",
     "infoValor02": "Promedio último mes",
     "valor02evolucion": "+26%",
@@ -405,14 +380,14 @@
         "info01": "Desde admisión al incio de estudio",
         "info02": "Estudios programados",
         "valor01": "19",
-        "tipoEvolucion01": "mala",
+        "tipoEvolucion01": "buena",
         "infoValor01": "Minutos de espera en sala",
         "infoValor02": "Promedio último mes",
         "valor02evolucion": "+26%",
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
         "inforValor02evolucion": "Aumentó en relación al mes anterior",
-        "valor03benchmark": "11",
+        "valor03benchmark": "44",
         "info01valor03benchmark": "Minutos de espera",
         "info02valor03benchmark": "Promedio último mes",
         "data": [
@@ -524,14 +499,14 @@
       },
       {
         "pregunta": "¿Cuántos pacientes se retiran de la institución antes de ser atendidos?",
-        "valor01": "02",
-        "tipoEvolucion01": "mala",
+        "valor01": "00",
+        "tipoEvolucion01": "neutra",
         "infoValor01": "Pacientes se retiran por día antes de ser atendidos",
         "infoValor02": "Promedio último mes",
-        "valor02evolucion": "+26%",
+        "valor02evolucion": "+00%",
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
-        "inforValor02evolucion": "Aumentó en relación al mes anterior",
+        "inforValor02evolucion": "Sin variación",
         "valor03benchmark": "05",
         "info01valor03benchmark": "Pacientes se retiran",
         "info02valor03benchmark": "Promedio último mes"
@@ -544,29 +519,29 @@
     "quality": "",
     "info01": "",
     "info02": "",
-    "valor01": "24",
-    "tipoEvolucion01": "buena",
+    "valor01": "05",
+    "tipoEvolucion01": "mala",
     "infoValor01": "Estudios realizados por resonador / día laboral",
     "infoValor02": "Promedio último mes",
-    "valor02evolucion": "+30%",
+    "valor02evolucion": "+16%",
     "tipoEvolucion02": "neutra",
     "tipoIcono": "sube",
     "inforValor02evolucion": "Aumentó en relación  al mes anterior",
-    "valor03benchmark": "28",
+    "valor03benchmark": "15",
     "info01valor03benchmark": "Estudios por día",
     "info02valor03benchmark": "Promedio último mes",
     "verMas": [
       {
         "pregunta": "¿Cuántos estudios se hacen por equipo por día? ",
-        "valor01": "24",
-        "tipoEvolucion01": "buena",
+        "valor01": "05",
+        "tipoEvolucion01": "mala",
         "infoValor01": "Estudios realizados por resonador / día laboral",
         "infoValor02": "Promedio último mes",
-        "valor02evolucion": "+30%",
+        "valor02evolucion": "+16%",
         "tipoEvolucion02": "neutra",
         "tipoIcono": "sube",
         "inforValor02evolucion": "Aumentó en relación al mes anterior",
-        "valor03benchmark": "28",
+        "valor03benchmark": "15",
         "info01valor03benchmark": "Estudios por día",
         "info02valor03benchmark": "Promedio último mes",
         "data": [
@@ -953,25 +928,25 @@
     "tipoEvolucion02": "neutra",
     "tipoIcono": "baja",
     "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
-    "valor03benchmark": "65%",
+    "valor03benchmark": "42%",
     "info01valor03benchmark": "Utilizado del total",
     "info02valor03benchmark": "Promedio último mes"
   },
   {
     "subtitle": "INFORMES",
-    "title": "TIEMPO DE ENTREGA",
+    "title": "TIEMPO DE ELABORACIÓN",
     "quality": "",
     "info01": "",
     "info02": "",
     "valor01": "54",
-    "tipoEvolucion01": "buena",
+    "tipoEvolucion01": "mala",
     "infoValor01": "Horas hasta la entrega del informe",
     "infoValor02": "Promedio último mes",
     "valor02evolucion": "-07%",
     "tipoEvolucion02": "neutra",
     "tipoIcono": "baja",
     "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
-    "valor03benchmark": "48",
+    "valor03benchmark": "27",
     "info01valor03benchmark": "Horas hasta la entrega",
     "info02valor03benchmark": "Promedio último mes",
     "verMas": [
@@ -1093,9 +1068,9 @@
     "infoValor02": "Promedio último mes",
     "valor02evolucion": "-13%",
     "tipoEvolucion02": "neutra",
-    "tipoIcono": "sube",
+    "tipoIcono": "baja",
     "inforValor02evolucion": "Disminuyó en relación  al mes anterior",
-    "valor03benchmark": "65%",
+    "valor03benchmark": "92%",
     "info01valor03benchmark": "Entrega a tiempo",
     "info02valor03benchmark": "Promedio último mes"
   }
